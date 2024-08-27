@@ -1,0 +1,497 @@
+{
+  "logo": "F&D",
+  "header": {
+    "id": "header",
+    "nav": [
+      {
+        "id": "home",
+        "name": "Home",
+        "url": "/"
+      },
+      {
+        "id": "menu",
+        "name": "Menu",
+        "url": "#menu"
+      },
+      {
+        "id": "services",
+        "name": "Services",
+        "url": "#services"
+      },
+      {
+        "id": "contact",
+        "name": "Contact",
+        "url": "#contact"
+      }
+    ],
+    "buttons": [
+      {
+        "id": "bag",
+        "name": "",
+        "url": "#",
+        "icon": "shopping-bag"
+      },
+      {
+        "id": "register",
+        "name": "Register",
+        "url": "#",
+        "icon": ""
+      },
+      {
+        "id": "login",
+        "name": "Login",
+        "url": "#",
+        "icon": ""
+      }
+    ]
+  },
+  "main": {
+    "id": "main",
+    "sections": [
+      {
+        "id": "home",
+        "title": "Don't wanna Make you have A bad day",
+        "subtitle": "Our job is delivering a delicious food with fast, free delivery and easy.",
+        "img": "./img/home/img.jpg",
+        "buttons" : [
+          {
+            "id": "order",
+            "name": "Order Now",
+            "url": "#"
+          },
+          {
+            "id": "learn",
+            "name": "How to order",
+            "url": "#"
+          }
+        ],
+        "reviews": {
+          "title": "Customer Review",
+          "grade": 4.8,
+          "amount" : "5k"
+        },
+        "stars" : [
+          {
+            "id" : "courier",
+            "name": "John Smith",
+            "subname": "Courier Faster",
+            "img": "./img/home/courier.png"
+          },
+          {
+            "id" : "reviews",
+            "name": "160K+",
+            "subname": "Reviews",
+            "img": "./img/home/food.png"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "title": "Support by",
+        "items": [
+          {
+            "id": 0,
+            "img": "./img/support/0.svg"
+          },
+          {
+            "id": 1,
+            "img": "./img/support/1.svg"
+          },
+          {
+            "id": 2,
+            "img": "./img/support/2.svg"
+          },
+          {
+            "id": 3,
+            "img": "./img/support/3.svg"
+          },
+          {
+            "id": 4,
+            "img": "./img/support/4.svg"
+          },
+          {
+            "id": 5,
+            "img": "./img/support/5.svg"
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "title": "Our serve just for you",
+        "label": "Our services",
+        "items": [
+          {
+            "id": 0,
+            "img": "./img/services/0.png",
+            "title": "Delivery Food",
+            "text": "Lorem ipsum dolor sit amet, consectetur"
+          },
+          {
+            "id": 1,
+            "img": "./img/services/1.png",
+            "title": "Easy to order",
+            "text": "Lorem ipsum dolor sit amet, consectetur"
+          },
+          {
+            "id": 2,
+            "img": "./img/services/2.png",
+            "title": "Fastest Delivery",
+            "text": "Lorem ipsum dolor sit amet, consectetur"
+          }
+        ]
+      },
+      {
+        "id": "menu",
+        "title": "Trending food",
+        "label": "- Popular Delivery -",
+        "items": [
+          {
+            "id": 0,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$20",
+            "grade" : "4.5"
+          },
+          {
+            "id": 1,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$15",
+            "grade" :  "4.5"
+          },
+          {
+            "id": 2,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$10",
+            "grade" :  "4.5"
+          },
+          {
+            "id": 3,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$20",
+            "grade" : "4.5"
+          },
+          {
+            "id": 4,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$15",
+            "grade" :  "4.5"
+          },
+          {
+            "id": 5,
+            "img": "./img/menu/img.jpg",
+            "title": "Lorem Ipsum",
+            "price" : "$10",
+            "grade" :  "4.5"
+          }
+        ]
+      },
+      {
+        "id": "comments",
+        "title": "Comment for Food",
+        "label": "- What they are say -",
+        "items": [
+          {
+            "id": 0,
+            "img": "./img/menu/img.jpg",
+            "items": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          },
+          {
+            "id": 1,
+            "img": "./img/menu/img.jpg",
+            "items": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "img": "./img/menu/img.jpg",
+            "items": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "img": "./img/menu/img.jpg",
+            "items": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "img": "./img/menu/img.jpg",
+            "items": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "img": "./img/menu/img.jpg",
+            "reviews": [
+              {
+                "id": 0,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              },
+              {
+                "id": 1,
+                "img" : "./img/testimonials/1.png",
+                "name" : "Lorem Ipsum",
+                "subname" : "Lorem Ipsum",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+                "grade": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "title": "What they are says about us",
+        "label": "- What they are say -",
+        "img": "./img/testimonials/img.png",
+        "items": [
+          {
+            "id": 0,
+            "img" : "./img/testimonials/1.png",
+            "name" : "Lorem Ipsum",
+            "subname" : "Lorem Ipsum",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+            "grade": 5.0
+          },
+          {
+            "id": 1,
+            "img" : "./img/testimonials/1.png",
+            "name" : "Lorem Ipsum",
+            "subname" : "Lorem Ipsum",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+            "grade": 5.0
+          },
+          {
+            "id": 2,
+            "img" : "./img/testimonials/1.png",
+            "name" : "Lorem Ipsum",
+            "subname" : "Lorem Ipsum",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod, magni, expedita, sapiente, natus, doloribus omnis voluptatum consequatur libero incidunt illo saepe fugit error provident quaerat numquam.",
+            "grade": 5.0
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Get more discount if you order from us",
+        "subtitle": "Join with us then you must have get a discount and get promo from us to you , enjoy and happy to order.",
+        "img": "./img/contact/img.jpg",
+        "form": {
+          "inputs": [
+            {
+              "id": "email",
+              "type": "email",
+              "placeholder": "Your Email Address"
+            }
+          ],
+          "button": {
+            "id": "submit",
+            "text": "Get"
+          }
+        }
+      }
+    ]
+  },
+  "footer": {
+    "id": "footer",
+    "nav": [
+      {
+        "id": "social-icons",
+        "title": "F&D",
+        "items": [
+          {
+            "id": "facebook",
+            "img": "./icon/social-icons/facebook.png"
+          },
+          {
+            "id": "instagram",
+            "img": "./icon/social-icons/instagram.png"
+          },
+          {
+            "id": "mail",
+            "img": "./icon/social-icons/mail.png"
+          },
+          {
+            "id": "twitter",
+            "img": "./icon/social-icons/twitter.png"
+          }
+        ]
+      },
+      {
+        "id": "product",
+        "title": "Our Product",
+        "items": [
+          {
+            "id" : "support",
+            "name" : "Supports",
+            "url": "#"
+          },
+          {
+            "id" : "guide",
+            "name" : "Guide",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "id": "terms",
+        "title": "Terms & policies",
+        "items": [
+          {
+            "id" : "terms-of-service",
+            "name" : "Terms of Service",
+            "url": "#"
+          },
+          {
+            "id" : "privacy-policy",
+            "name" : "Privacy Policy\n",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "id": "company",
+        "title": "Company",
+        "items": [
+          {
+            "id" : "home",
+            "name" : "Home",
+            "url": "#"
+          },
+          {
+            "id" : "about-us",
+            "name" : "About Us",
+            "url": "/about-us"
+          },
+          {
+            "id" : "contact-us",
+            "name" : "Contact Us",
+            "url": "/contact-us"
+          }
+        ]
+      },
+      {
+        "id": "contact-list",
+        "title": "Contact",
+        "items": [
+          {
+            "id" : "telephone",
+            "name" : "(+62) 893912392190",
+            "url": "tel:+62893912392190"
+          },
+          {
+            "id" : "mail",
+            "name" : "agecnycr@gmail.com",
+            "url": "mailto:agecnycr@gmail.com"
+          }
+        ]
+      },
+      {
+        "id": "service-delivery",
+        "title": "Food Delivery",
+        "items": [
+          {
+            "id" : "kfc",
+            "name" : "KFC Delivery",
+            "url": "#"
+          },
+          {
+            "id" : "bungo",
+            "name" : "Bungo Tanjung Delivery",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": "© NameBrand 2022 - All Rights Reserved"
+  }
+}
