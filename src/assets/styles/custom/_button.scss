@@ -23,6 +23,8 @@
 
     color: $white;
   }
+
+  @include box-hover-effect;
 }
 
 .button_outline {

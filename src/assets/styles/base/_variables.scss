@@ -5,9 +5,11 @@
   --gray: #B5B5B5;
   --gray-dark: #7A7A7A;
 
+  --primary: var(--orange);
+
   --font-primary: 'Montserrat';
 }
-
+$primary: var(--orange);
 $orange: var(--orange);
 $black: var(--black);
 $white: var(--white);
@@ -17,6 +19,6 @@ $gray-dark: var(--gray-dark);
 $font-primary: var(--font-primary);
 
 $header-py: 55px;
-$header-height: calc(2* $header-py + 24px);
+$header-height: calc(2* $header-py + 50px);
 
 $transition: 0.3s ease-in-out;
