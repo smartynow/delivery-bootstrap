@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 10px;
+
+  background: $orange;
+  border-radius: 41px;
+
+  span {
+    width: max-content;
+    height: 16px;
+
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+    letter-spacing: 0.01em;
+
+    color: $white;
+  }
+}
+
+.button_outline {
+  background: $white;
+  border: 1px solid $orange;
+
+  span {
+    color: $orange;
+  }
+}
+
+.button_icon {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background: $white;
+
+  position: relative;
+
+}

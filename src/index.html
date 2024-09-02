@@ -13,21 +13,68 @@
             <div class="header__logo">
                 <span>F&D</span>
             </div>
-            <nav class="nav header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <nav class="header-nav header__nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="#home" class="header-nav__link">Home</a></li>
+                    <li class="header-nav__item"><a href="#menu" class="header-nav__link">Menu</a></li>
+                    <li class="header-nav__item"><a href="#services" class="header-nav__link">Services</a></li>
+                    <li class="header-nav__item"><a href="#contact" class="header-nav__link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="buttons header__buttons">
-                <button type="button" class="button button_icon header__button"><img src="./icon/shopping-bag.svg" alt="bag"></button>
-                <button type="button" class="button header__button"><span>Register</span></button>
-                <button type="button" class="button button_outline header__button"><span>Register</span></button>
+            <div class="header__buttons">
+                <button type="button" id="bag" class="button button_icon header__button"><img src="./assets/images/icon/shopping-bag.svg" alt="bag"></button>
+                <button type="button" id="register" class="button button_outline header__button"><span>Register</span></button>
+                <button type="button" id="login" class="button header__button"><span>Login</span></button>
             </div>
         </div>
     </header>
+
+    <main class="main">
+        <section class="home main__item" id="home">
+            <div class="container home__container">
+                <h1 class="title title_xlarge home__title">
+                    Don’t wanna <br>
+                    Make you have <br>
+                    A bad day
+                </h1>
+                <p class="text home__text">
+                    Our job is delivering a delicious food with fast , free delivery and easy.
+                </p>
+                <div class="home__buttons">
+                    <button type="button" id="order" class="button header__button"><span>Order Now</span></button>
+                    <button type="button" id="learn" class="button button_outline header__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#EC994B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 8L16 12L10 16V8Z" stroke="#EC994B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>How to order</span></button>
+                </div>
+                <div class="home-reviews home__reviews">
+                    <div class="home-reviews__items">
+                        <div class="home-reviews__item">
+                            <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
+                        </div>
+                        <div class="home-reviews__item">
+                            <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
+                        </div>
+                        <div class="home-reviews__item">
+                            <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
+                        </div>
+                    </div>
+                    <h3 class="home-reviews__title">
+                        Customer Review
+                    </h3>
+                    <div class="home-reviews__grade">
+                        <img src="./assets/images/icon/star.svg" alt="star">
+                        <p><span>4.8</span> (5k reviews)</p>
+                    </div>
+                </div>
+                <div class="home__image">
+                    <img src="./assets/images/home/img.jpg" alt="home">
+                </div>
+            </div>
+        </section>
+    </main>
 
 <script src="./assets/scripts/vendor/jquery/jquery-3.7.1.min.js"></script>
 <script src="./assets/scripts/scripts.js"></script>
