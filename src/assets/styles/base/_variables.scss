@@ -16,4 +16,7 @@ $gray-dark: var(--gray-dark);
 
 $font-primary: var(--font-primary);
 
+$header-py: 55px;
+$header-height: calc(2* $header-py + 24px);
+
 $transition: 0.3s ease-in-out;

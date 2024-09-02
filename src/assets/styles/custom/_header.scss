@@ -1,0 +1,38 @@
+.header {
+  padding: $header-py 0;
+  height: $header-height;
+
+  @include fixed-top();
+
+  &__container {
+    @include flex-space-between();
+  }
+
+  &__logo {
+    flex: 1 1 auto;
+
+    font-family: $font-primary;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+    letter-spacing: 0.01em;
+
+    color: $orange;
+  }
+
+  &__nav {
+    .header-nav__item {
+      margin-right: 50px;
+    }
+  }
+
+  &__buttons {
+    @include flex-space-between();
+
+    button:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

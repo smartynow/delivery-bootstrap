@@ -1,0 +1,7 @@
+.main {
+  &__item {
+    &:first-child {
+      padding-top: $header-height;
+    }
+  }
+}
