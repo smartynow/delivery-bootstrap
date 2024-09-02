@@ -1,0 +1,106 @@
+//Calculate percentage of a child size to a parent size
+@function calc-per($child-size, $parent-size) {
+  @if ($parent-size == 0) {
+    @error "Parent size cannot be zero";
+  }
+  @return calc($child-size / $parent-size) * 100%;
+}
+
+//Calculate rem of a pixel size
+@function calc-rem($px) {
+  @if ($px == 0) {
+    @error "Pixel size cannot be zero";
+  }
+  @return calc($px / 16)rem;
+}
+
+//Media Queries
+$breakpoints: (
+        'small': 576px,
+        'medium': 768px,
+        'large': 992px,
+        'xlarge': 1200px,
+        'xxlarge': 1400px,
+);
+
+@function get-breakpoint($device) {
+  @if map-has-key($breakpoints, $device) {
+    @return map-get($breakpoints, $device);
+  } @else {
+    @error "No breakpoint defined for #{$device}";
+  }
+}
+
+@mixin media($device, $type: min) {
+  $breakpoint: get-breakpoint($device);
+
+  @if $type == min {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+  } @else if $type == max {
+    $breakpoint: $breakpoint - 0.0625rem;
+
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @error "Invalid type: #{$type}. Use 'min' or 'max'.";
+  }
+}
+//Media Queries End
+
+//Flexbox
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-space-between($ai: center) {
+  display: flex;
+  justify-content: space-between;
+  align-items: $ai;
+}
+//Flexbox End
+
+//Position
+@mixin fixed-top($top: 0) {
+  position: fixed;
+  top: $top;
+  left: 0;
+  right: 0;
+
+  z-index: 5;
+}
+@mixin absolute-top-left($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin absolute-center-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin absolute-center-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+//Position End
+
+//Effects
+@mixin hover-effect {
+  transition: text-shadow $transition;
+  &:hover {
+    text-shadow: 0.7px 0 0 currentColor;
+  }
+}
+//Effects End

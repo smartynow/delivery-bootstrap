@@ -1,0 +1,46 @@
+{
+  "name": "Food Delivery Landing Page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartynow/gulp-boilerplate"
+  },
+  "author": "smartynow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartynow/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/smartynow/gulp-boilerplate#readme",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "css-loader": "^7.1.2",
+    "del": "latest",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-webp": "latest",
+    "sass": "latest",
+    "style-loader": "^4.0.0",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "not dead"
+  ],
+  "dependencies": {
+  }
+}
