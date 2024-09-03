@@ -1,0 +1,29 @@
+.m-services__items {
+  @include flex-space-between();
+  flex-wrap: wrap;
+}
+
+.m-services__item {
+  @include flex-center-column;
+
+  &-image {
+    width: 260px;
+    margin-bottom: 30px;
+
+    img {
+      aspect-ratio: 1.1/1;
+      object-fit: contain;
+    }
+  }
+
+  &-title {
+    @include title($font-weight: 600, $font-size: 32px);
+    margin-bottom: 15px;
+  }
+
+  &-text {
+    @include text($font-size: 16px);
+  }
+
+  @include hover-scale($scale: 1.05);
+}

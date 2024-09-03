@@ -21,7 +21,7 @@ $breakpoints: (
         'large': 992px,
         'xlarge': 1200px,
         'xxlarge': 1400px,
-);
+); //Bootstrap breakpoints
 
 @function get-breakpoint($device) {
   @if map-has-key($breakpoints, $device) {
@@ -51,10 +51,18 @@ $breakpoints: (
 //Media Queries End
 
 //Flexbox
-@mixin flex-center {
+@mixin flex-center() {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flex-center-column() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
 }
 
 @mixin flex-space-between($ai: center) {
@@ -62,6 +70,14 @@ $breakpoints: (
   justify-content: space-between;
   align-items: $ai;
 }
+
+@mixin gap($gap) {
+  margin-right: $gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+} //For Older Browsers
 //Flexbox End
 
 //Position
@@ -110,4 +126,51 @@ $breakpoints: (
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 }
+
+@mixin hover-scale($scale: 1.2) {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale($scale);
+  }
+}
 //Effects End
+//Typography
+@mixin text (
+  $font-family: $font-primary,
+  $font-size: $text-size-base,
+  $font-weight: 500,
+  $line-height: 130%,
+  $letter-spacing: 0.01em) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin title (
+  $font-family: $font-primary,
+  $font-size: $title-size-base,
+  $font-weight: 700,
+  $line-height: 120%,
+  $letter-spacing: 0.01em) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+//Typography End
+//Geometry
+@mixin quadrate($width) {
+  width: $width;
+  aspect-ratio: 1/1;
+}
+
+@mixin circle($width) {
+  width: $width;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+//Geometry End

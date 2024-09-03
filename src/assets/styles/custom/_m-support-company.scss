@@ -1,0 +1,22 @@
+.m-support-company {
+  &__container {
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &__title {
+  }
+
+  &__items {
+    width: 100%;
+    @include flex-space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+  @include hover-scale();
+  }
+}

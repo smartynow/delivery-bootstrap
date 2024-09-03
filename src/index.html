@@ -16,8 +16,8 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-item"><a href="#menu" class="header__nav-link">Menu</a></li>
                     <li class="header__nav-item"><a href="#services" class="header__nav-link">Services</a></li>
+                    <li class="header__nav-item"><a href="#menu" class="header__nav-link">Menu</a></li>
                     <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
                 </ul__
             </nav>
@@ -30,72 +30,175 @@
     </header>
 
     <main class="main">
-        <section class="home main__item main__home" id="home">
-            <div class="container home__container">
-                <div class="col-12 col-lg-5 home__content">
-                    <h1 class="title title_xlarge home__title">
+        <section class="m-home main__item main__home" id="home">
+            <div class="container m-home__container">
+                <div class="col-12 col-lg-5 m-home__content">
+                    <h1 class="main__title main__title_xlarge m-home__title">
                         Don’t wanna <br>
                         Make you have <br>
                         A bad day
                     </h1>
-                    <p class="text home__text">
+                    <p class="main__text m-home__text">
                         Our job is delivering a delicious food with fast , free delivery and easy.
                     </p>
-                    <div class="home__buttons">
-                        <button type="button" id="order" class="button header__button"><span>Order Now</span></button>
-                        <button type="button" id="learn" class="button button_outline header__button">
+                    <div class="m-home__buttons">
+                        <button type="button" id="order" class="button m-header__button"><span>Order Now</span></button>
+                        <button type="button" id="learn" class="button button_outline m-header__button">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#EC994B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M10 8L16 12L10 16V8Z" stroke="#EC994B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             <span>How to order</span></button>
                     </div>
-                    <div class="home__reviews">
-                        <div class="home__reviews-items">
-                            <div class="home__reviews-item">
+                    <div class="m-home__reviews">
+                        <div class="m-home__reviews-items">
+                            <div class="m-home__reviews-item">
                                 <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
                             </div>
-                            <div class="home__reviews-item">
+                            <div class="m-home__reviews-item">
                                 <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
                             </div>
-                            <div class="home__reviews-item">
+                            <div class="m-home__reviews-item">
                                 <img src="./assets/images/testimonials/1.png" alt="Lorem Ipsum">
                             </div>
                         </div>
-                        <h3 class="home__reviews-title">
+                        <h3 class="m-home__reviews-title">
                             Customer Review
                         </h3>
-                        <div class="home__reviews-grade">
+                        <div class="m-home__reviews-grade">
                             <img src="./assets/images/icon/star.svg" alt="star">
                             <p><span>4.8</span> (5k reviews)</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-7 home__image">
+                <div class="col-12 col-lg-7 m-home__image">
                     <img src="./assets/images/home/img.jpg" alt="home">
 
-                    <a href="#" class="home__image-decor home__image-decor_courier">
-                        <img class="home__image-decor-img" src="./assets/images/home/courier.png" alt="courier">
-                        <div class="home__image-decor-label">
-                            <p class="home__image-decor-title">John Smith</p>
-                            <p class="home__image-decor-text">Courier Faster</p>
+                    <a href="#" class="m-home__image-decor m-home__image-decor_courier">
+                        <img class="m-home__image-decor-img" src="./assets/images/home/courier.png" alt="courier">
+                        <div class="m-home__image-decor-label">
+                            <p class="m-home__image-decor-title">John Smith</p>
+                            <p class="m-home__image-decor-text">Courier Faster</p>
                         </div>
                     </a>
 
-                    <a href="#" class="home__image-decor home__image-decor_reviews">
-                        <img class="home__image-decor-img home__image-decor-img" src="./assets/images/home/food.png" alt="courier">
-                        <div class="home__image-decor-label">
-                            <p class="home__image-decor-text">Reviews</p>
-                            <p class="home__image-decor-title">160K+</p>
+                    <a href="#" class="m-home__image-decor m-home__image-decor_reviews">
+                        <img class="m-home__image-decor-img m-home__image-decor-img" src="./assets/images/home/food.png" alt="courier">
+                        <div class="m-home__image-decor-label">
+                            <p class="m-home__image-decor-text">Reviews</p>
+                            <p class="m-home__image-decor-title">160K+</p>
                         </div>
                     </a>
 
-                    <a href="#" class="home__image-decor home__image-decor_reviews-2">
-                        <img class="home__image-decor-img home__image-decor-img" src="./assets/images/testimonials/1.png" alt="courier">
-                        <div class="home__image-decor-label">
-                            <p class="home__image-decor-text">“When you are to lazy for cook, just click and they will come quickly”</p>
+                    <a href="#" class="m-home__image-decor m-home__image-decor_reviews-2">
+                        <img class="m-home__image-decor-img m-home__image-decor-img" src="./assets/images/testimonials/1.png" alt="courier">
+                        <div class="m-home__image-decor-label">
+                            <p class="m-home__image-decor-text">“When you are to lazy for cook, just click and they will come quickly”</p>
                         </div>
                     </a>
+                </div>
+            </div>
+        </section>
+        <section class="m-support-company main__item main__support-company" id="support-company">
+            <div class="container m-support-company__container">
+                <h2 class="main__text main__text_semi-bold main__text_small m-support-company__title">
+                    Support by :
+                </h2>
+                <div class="m-support-company__items">
+                    <div class="m-support-company__item">
+                        <img src="./assets/images/support/0.svg" alt="lorem">
+                    </div>
+                    <div class="m-support-company__item">
+                        <img src="./assets/images/support/1.svg" alt="lorem">
+                    </div>
+                    <div class="m-support-company__item">
+                        <img src="./assets/images/support/2.svg" alt="lorem">
+                    </div>
+                    <div class="m-support-company__item">
+                        <img src="./assets/images/support/4.svg" alt="lorem">
+                    </div>
+                    <div class="m-support-company__item">
+                        <img src="./assets/images/support/5.svg" alt="lorem">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-services main__item main__services" id="services">
+            <div class="container m-services__container">
+                <div class="main__header">
+                    <p class="main__text main__text_orange main__text_xsmall">
+                        - Our services -
+                    </p>
+                    <h2 class="main__title">
+                        Our serve just for you
+                    </h2>
+                </div>
+                <div class="m-services__items">
+                    <article class="col-12 col-lg-3 m-services__item">
+                        <div class="m-services__item-image">
+                            <img src="./assets/images/services/0.png" alt="lorem">
+                        </div>
+                        <h3 class="m-services__item-title">
+                            Delivery Food
+                        </h3>
+                        <p class="m-services__item-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </article>
+                    <article class="col-12 col-lg-3 m-services__item">
+                        <div class="m-services__item-image">
+                            <img src="./assets/images/services/1.png" alt="lorem">
+                        </div>
+                        <h3 class="m-services__item-title">
+                            Easy to order
+                        </h3>
+                        <p class="m-services__item-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </article>
+                    <article class="col-12 col-lg-3 m-services__item">
+                        <div class="m-services__item-image">
+                            <img src="./assets/images/services/2.png" alt="lorem">
+                        </div>
+                        <h3 class="m-services__item-title">
+                            Fastest Delivery
+                        </h3>
+                        <p class="m-services__item-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="m-menu menu__item main__menu" id="menu">
+            <div class="container m-menu__container">
+                <div class="main__header">
+                    <p class="main__text main__text_orange main__text_xsmall">
+                        - Popular Delivery -
+                    </p>
+                    <h2 class="main__title">
+                        Trending food
+                    </h2>
+                </div>
+                <div class="m-menu__items">
+                    <article class="m-menu__item" style="background-image: url('./assets/images/menu/img.jpg');">
+                        <div class="m-menu__item-content">
+                            <p class="m-menu__item-price">
+                                $15
+                            </p>
+                            <h3 class="m-menu__item-title">
+                                Lorem Ipsum
+                            </h3>
+                            <div class="m-menu__item-grade">
+                                <p>4.5</p>
+                                <div class="m-menu__item-star"></div>
+                                <div class="m-menu__item-star"></div>
+                                <div class="m-menu__item-star"></div>
+                                <div class="m-menu__item-star"></div>
+                                <div class="m-menu__item-star"></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

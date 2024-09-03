@@ -1,9 +1,16 @@
-@import 'title';
-@import 'text';
 @import 'button';
 
 @import 'header';
+
 @import 'main';
-@import 'home';
+@import 'm-home';
+@import 'm-support-company';
+@import 'm-services';
+@import "m-menu";
+@import 'm-comments';
+@import 'm-testimonials';
+@import 'm-contact';
+
+@import 'footer';
 
 //TODO Add mobile styles
