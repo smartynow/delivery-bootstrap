@@ -102,8 +102,9 @@ $breakpoints: (
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@mixin absolute-center-x {
+@mixin absolute-center-x($top: 0) {
   position: absolute;
+  top: $top;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -171,8 +172,8 @@ $breakpoints: (
 }
 
 @mixin circle($width) {
-  width: $width;
-  height: $width;
+  //width: $width !important;
+  height: $width !important;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }

@@ -35,4 +35,28 @@ $(document).ready(() => {
         }
     });
 
+    const swiperComments = new Swiper(".m-comments__swiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        // Navigation arrows
+        pagination: {
+            el: '.m-comments__pagination',
+        },
+        navigation: {
+            nextEl: ".m-comments__button-next",
+            prevEl: ".m-comments__button-prev"
+        },
+        keyboard: {
+            enabled: true
+        },
+        slidesPerView: 1
+    });
+
+    $('.m-comments__item-prev').on('click', function () {
+        swiperComments.slidePrev();
+    });
+    $('.m-comments__item-next').on('click', function () {
+        swiperComments.slideNext();
+    });
 });
