@@ -72,10 +72,12 @@ $breakpoints: (
 }
 
 @mixin gap($gap) {
-  margin-right: $gap;
+  & > * {
+    margin-right: $gap;
 
-  &:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 } //For Older Browsers
 //Flexbox End
@@ -170,6 +172,7 @@ $breakpoints: (
 
 @mixin circle($width) {
   width: $width;
+  height: $width;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }

@@ -23,6 +23,7 @@
 
   &-text {
     @include text($font-size: 16px);
+    text-align: center;
   }
 
   @include hover-scale($scale: 1.05);

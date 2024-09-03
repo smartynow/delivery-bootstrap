@@ -1,7 +1,7 @@
 .header {
   padding: $header-py 0;
   height: $header-height;
-  background-color: #FFF;
+  background-color: $bg-primary;
 
   @include fixed-top();
 
