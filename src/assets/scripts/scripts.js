@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    const swiper = new Swiper(".swiper", {
+    const swiper = new Swiper(".m-menu__swiper", {
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
@@ -24,10 +24,10 @@ $(document).ready(() => {
         },
         breakpoints: {
             560: {
-                slidesPerView: 2.5
+                slidesPerView: 1
             },
             768: {
-                slidesPerView: 3
+                slidesPerView: 1
             },
             1024: {
                 slidesPerView: 3
