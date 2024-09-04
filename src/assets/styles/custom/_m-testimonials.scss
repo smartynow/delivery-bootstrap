@@ -8,20 +8,15 @@
 }
 
 .m-testimonials__item {
+  @include column-gap(24px);
   &-header {
     display: flex;
     align-items: center;
 
-    @include gap(8px);
-
-    margin-bottom: 25px;
+    @include row-gap(8px);
   }
 
   &-name {
-    @include title($font-weight: 600, $font-size: 24px);
-
-    color: $black;
-
     margin-bottom: 10px;
   }
 }
