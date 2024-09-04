@@ -20,23 +20,30 @@ $bg-primary: #F5F5F5;
 
 $font-primary: var(--font-primary);
 
+$text-font-primary: $font-primary;
+$text-font-weight: 500;
+$text-font-weight-lg: 600;
+$text-font-weight-sm: 400;
+$text-line-height: 130%;
+$text-letter-spacing: 0.01em;
 $text-size-base: 20px;
 $text-size-sm: 16px;
 $text-size-xs: 14px;
 $text-size-xxs: 12px;
-
+$text-color: $gray-dark;
 
 $title-font-primary: $font-primary;
 $title-font-weight: 700;
+$title-font-weight-sm: 600;
 $title-line-height: 120%;
 $title-letter-spacing: 0.01em;
-$title-color: $black;
-$title-size-xlg: 64px;
+$title-size-xl: 64px;
 $title-size-lg: 48px;
 $title-size-base: 36px;
 $title-size-sm: 32px;
 $title-size-xs: 24px;
 $title-size-xxs: 20px;
+$title-color: $black;
 
 $header-py: 55px;
 $header-height: calc(2* $header-py + 50px);

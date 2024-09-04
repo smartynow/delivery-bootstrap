@@ -159,30 +159,24 @@ $breakpoints: (
 }
 //Effects End
 //Typography
-@mixin text (
-  $font-family: $font-primary,
-  $font-size: $text-size-base,
-  $font-weight: 500,
-  $line-height: 130%,
-  $letter-spacing: 0.01em) {
+@mixin text ($font-family: $text-font-primary, $font-size: $text-size-base, $font-weight: $text-font-weight, $line-height: $text-line-height, $letter-spacing: $text-letter-spacing, $color: $text-color ) {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
+
+  color: $color;
 }
 
-@mixin title (
-  $font-family: $title-font-primary,
-  $font-size: $title-size-base,
-  $font-weight: $title-font-weight,
-  $line-height: $title-line-height,
-  $letter-spacing: $title-letter-spacing) {
+@mixin title ($font-family: $title-font-primary, $font-size: $title-size-base, $font-weight: $title-font-weight, $line-height: $title-line-height, $letter-spacing: $title-letter-spacing, $color: $title-color ) {
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
+
+  color: $color;
 }
 //Typography End
 //Geometry

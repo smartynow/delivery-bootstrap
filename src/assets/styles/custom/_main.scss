@@ -26,17 +26,33 @@
 .main__title {
   @include title();
 
-  color: $title-color;
+  // Font Sizes
+  &_xxsmall {
+    font-size: $title-size-xxs;
+  }
+
+  &_xsmall {
+    font-size: $title-size-xs;
+  }
+
+  &_small {
+    font-size: $title-size-sm;
+  }
 
   &_large {
-    font-size: 48px;
+    font-size: $title-size-lg;
   }
 
   &_xlarge {
-    font-size: 64px;
+    font-size: $title-size-xl;
   }
 
-  //Color
+  // Font Weights
+  &_weight-sm {
+    font-weight: $title-font-weight-sm;
+  }
+
+  // Colors
   &_orange {
     color: $orange;
   }
@@ -45,55 +61,32 @@
     color: $white;
   }
 
-  &_black {
-    color: $black;
-  }
-
   &_gray {
     color: $gray;
   }
 
   &_gray-dark {
     color: $gray-dark;
-  }
-
-  //Font Weight
-  &_bold {
-    font-weight: 700;
-  }
-
-  &_semi-bold {
-    font-weight: 600;
-  }
-
-  &_medium {
-    font-weight: 500;
-  }
-
-  &_regular {
-    font-weight: 400;
-  }
-
-  &_light {
-    font-weight: 300;
   }
 }
 
 .main__text {
   @include text();
 
-  color: $gray-dark;
-
-  //Font Size
+  //Font Sizes
+  &_xxsmall {
+    font-size: $text-size-xxs;
+  }
+  
   &_xsmall {
-    font-size: 14px;
+    font-size: $text-size-xs;
   }
 
   &_small {
-    font-size: 16px;
+    font-size: $text-size-sm;
   }
 
-  //Color
+  //Colors
   &_orange {
     color: $orange;
   }
@@ -110,31 +103,14 @@
     color: $gray;
   }
 
-  &_gray-dark {
-    color: $gray-dark;
-  }
-
-  //Font Weight
-  &_bold {
-    font-weight: 700;
-  }
-
-  &_semi-bold {
+  //Font Weights
+  &_weight-lg {
     font-weight: 600;
   }
 
-  &_medium {
-    font-weight: 500;
-  }
-
-  &_regular {
+  &_weight-sm {
     font-weight: 400;
   }
-
-  &_light {
-    font-weight: 300;
-  }
-
 }
 
 .main__grade {
