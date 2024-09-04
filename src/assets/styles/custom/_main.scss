@@ -77,7 +77,7 @@
   &_xxsmall {
     font-size: $text-size-xxs;
   }
-  
+
   &_xsmall {
     font-size: $text-size-xs;
   }
@@ -115,11 +115,7 @@
 
 .main__grade {
   display: flex;
-  @include gap(4px);
-
-  p {
-    @include text($font-weight: 600, $font-size: 16px);
-  }
+  @include row-gap(4px);
 
   &-star {
     @include quadrate(18px);
@@ -129,7 +125,7 @@
 
 .main__swiper-controls {
   @include flex-center;
-  @include gap(15px);
+  @include row-gap(15px);
   width: max-content;
   margin: 0 auto;
 }
