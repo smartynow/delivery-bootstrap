@@ -1,3 +1,7 @@
+.m-comments__container {
+  position: relative;
+}
+
 .m-comments__item {
   position: relative;
 
@@ -13,13 +17,16 @@
 }
 
 .m-comments__item-prev {
+  @include absolute-top-left(16%, 10%);
+  z-index: 5;
+
   cursor: pointer;
   width: 160px !important;
   @include circle(160px);
 
   background-repeat: no-repeat;
 
-  @include absolute-top-left();
+  @include box-hover-effect;
 
   span {
     @include absolute-center;
@@ -33,14 +40,17 @@
 }
 
 .m-comments__item-next {
+  @include absolute-top-left(84%, 90%);
+  transform: translate(-100%, -100%);
+  z-index: 5;
+
   cursor: pointer;
   width: 112px !important;
   @include circle(112px);
 
   background-repeat: no-repeat;
 
-  @include absolute-top-left(84%, 100%);
-  transform: translate(-100%, -100%);
+  @include box-hover-effect;
 
   span {
     @include absolute-center;

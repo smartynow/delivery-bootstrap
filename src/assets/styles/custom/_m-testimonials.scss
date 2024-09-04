@@ -1,0 +1,27 @@
+.m-testimonials__container {
+  @include flex-space-between();
+}
+
+.m-testimonials__header {
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.m-testimonials__item {
+  &-header {
+    display: flex;
+    align-items: center;
+
+    @include gap(8px);
+
+    margin-bottom: 25px;
+  }
+
+  &-name {
+    @include title($font-weight: 600, $font-size: 24px);
+
+    color: $black;
+
+    margin-bottom: 10px;
+  }
+}

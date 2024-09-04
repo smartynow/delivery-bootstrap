@@ -26,7 +26,7 @@
 .main__title {
   @include title();
 
-  color: $black;
+  color: $title-color;
 
   &_large {
     font-size: 48px;
@@ -35,30 +35,8 @@
   &_xlarge {
     font-size: 64px;
   }
-}
 
-.main__text {
-  @include text();
-  color: $gray-dark;
-
-  &_xsmall {
-    font-size: 14px;
-  }
-
-  &_small {
-    font-size: 16px;
-  }
-
-  &_regular {
-    font-weight: 400;
-  }
-
-  &_semi-bold {
-    font-weight: 600;
-  }
-}
-
-.main__title, .main__text {
+  //Color
   &_orange {
     color: $orange;
   }
@@ -77,5 +55,135 @@
 
   &_gray-dark {
     color: $gray-dark;
+  }
+
+  //Font Weight
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_semi-bold {
+    font-weight: 600;
+  }
+
+  &_medium {
+    font-weight: 500;
+  }
+
+  &_regular {
+    font-weight: 400;
+  }
+
+  &_light {
+    font-weight: 300;
+  }
+}
+
+.main__text {
+  @include text();
+
+  color: $gray-dark;
+
+  //Font Size
+  &_xsmall {
+    font-size: 14px;
+  }
+
+  &_small {
+    font-size: 16px;
+  }
+
+  //Color
+  &_orange {
+    color: $orange;
+  }
+
+  &_white {
+    color: $white;
+  }
+
+  &_black {
+    color: $black;
+  }
+
+  &_gray {
+    color: $gray;
+  }
+
+  &_gray-dark {
+    color: $gray-dark;
+  }
+
+  //Font Weight
+  &_bold {
+    font-weight: 700;
+  }
+
+  &_semi-bold {
+    font-weight: 600;
+  }
+
+  &_medium {
+    font-weight: 500;
+  }
+
+  &_regular {
+    font-weight: 400;
+  }
+
+  &_light {
+    font-weight: 300;
+  }
+
+}
+
+.main__grade {
+  display: flex;
+  @include gap(4px);
+
+  p {
+    @include text($font-weight: 600, $font-size: 16px);
+  }
+
+  &-star {
+    @include quadrate(18px);
+    background: url("../images/icon/star.svg") no-repeat center;
+  }
+}
+
+.main__swiper-controls {
+  @include flex-center;
+  @include gap(15px);
+  width: max-content;
+  margin: 0 auto;
+}
+
+.main__swiper-button-prev, .main__swiper-button-next {
+  @include flex-center;
+  height: 40px;
+  border-radius: 50%;
+  background: $white;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.main__swiper-button-next {
+  transform: rotate(-180deg);
+}
+
+.main__swiper-pagination {
+  @include flex-center;
+
+  & > .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background: #E8E8E8;
+  }
+
+  & > .swiper-pagination-bullet-active {
+    background: $orange;
   }
 }

@@ -53,10 +53,26 @@ $(document).ready(() => {
         slidesPerView: 1
     });
 
-    $('.m-comments__item-prev').on('click', function () {
-        swiperComments.slidePrev();
+    const swiperTestimonials = new Swiper(".m-testimonials__swiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: ".m-testimonials__button-next",
+            prevEl: ".m-testimonials__button-prev"
+        },
+        keyboard: {
+            enabled: true
+        },
+        slidesPerView: 1
     });
-    $('.m-comments__item-next').on('click', function () {
+
+    $('#prev-comment').on('click', function () {
+        swiperComments.slidePrev();
+        console.log('click');
+    });
+    $('#next-comment').on('click', function () {
         swiperComments.slideNext();
     });
 });
