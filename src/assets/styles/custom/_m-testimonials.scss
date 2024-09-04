@@ -2,6 +2,10 @@
   @include flex-space-between();
 }
 
+.m-testimonials__img {
+  max-height: 635px;
+}
+
 .m-testimonials__header {
   align-items: flex-start;
   margin-bottom: 25px;
