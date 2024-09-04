@@ -30,6 +30,8 @@
   background: #FFFFFF;
   border-radius: 8px;
   border: none;
+
+  @include box-hover-effect;
 }
 
 .m-contact__button {
@@ -38,6 +40,8 @@
 
   background: #222224;
   border-radius: 8px;
+
+  @include box-hover-effect;
 
   span {
     font-family: $font-primary;
